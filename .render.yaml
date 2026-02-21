@@ -4,9 +4,8 @@ services:
     name: telegram-bot
     runtime: python
     pythonVersion: 3.12.7
-    buildCommand: pip install -r requirements.txt
+    buildCommand: pip install python-telegram-bot==20.6 openai==1.35.10
     startCommand: python app.py
     envVars:
       - key: BOT_TOKEN
         fromSecret: BOT_TOKEN
-
