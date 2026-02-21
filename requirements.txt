@@ -1,4 +1,5 @@
 python-telegram-bot==20.6
 openai==1.35.10
-gradio==6.6.0
+
+
 
