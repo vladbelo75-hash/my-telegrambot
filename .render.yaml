@@ -1,0 +1,11 @@
+# .render.yaml
+services:
+  - type: web
+    name: telegram-bot
+    runtime: python
+    pythonVersion: 3.12.7
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    envVars:
+      - key: BOT_TOKEN
+        fromSecret: BOT_TOKEN
